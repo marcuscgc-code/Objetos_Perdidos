@@ -1,0 +1,52 @@
+npx create-next-app@latest objetos-perdidos --typescript --tailwind --eslint
+
+
+npx create-next-app@latest [nome projeto] --typescript --tailwind --eslint
+
+isso faz a instalação do Next.js
+
+Node tem que estar intalado e "npm" gerenciador de pacotes e o "npx" executa pacotes sem instalar globalmente
+
+npx rodou o pacote "create-next-app" é do tipo scaffolder, ele cria toda a estrutura inicial de um projeto Next.js sem precisar fazer do zero
+
+
+Next.js é um framework open-source que roda em cima do React, criado pelo pessoal da Vercel. Ele oferece um monte de funcionalidades prontas para resolver vários desafios comuns no desenvolvimento web, que normalmente dariam trabalho de configurar “na mão” usando só React puro.
+
+Para que serve?
+Criar aplicações web modernas e rápidas
+Permitir que as páginas carreguem rápido, fiquem bem indexadas pelo Google (SEO)
+Facilitar rotas, APIs, autenticação, e até deploy
+Principais Características:
+SSR (Server-Side Rendering) e SSG (Static Generation):
+Renderiza páginas no servidor ou estáticas antes de enviar ao navegador, resultando em carregamento instantâneo e ótimo SEO.
+Exemplo: blogs, ecommerces, dashboards.
+
+Roteamento Automático:
+Crie uma pasta pages/ e cada arquivo/módulo lá vira automaticamente uma rota no site.
+
+API Routes (rotas backend):
+Permite criar funções do back-end direto dentro do seu projeto (ótimo para criar endpoints e pequenas funções do servidor rápido).
+Otimize imagens (Image Optimization), fontes e assets
+Componente <Image /> já trata compressão, responsive, lazy loading automaticamente.
+
+Hot Reloading e Fast Refresh
+Toda mudança no código é refletida instantaneamente sem perder seu estado ― produtividade máxima durante o desenvolvimento.
+
+Suporte a TypeScript, CSS-in-JS, Styled Components, Tailwind, etc.
+
+Deploy facilitado (especialmente na Vercel, mas roda em qualquer lugar)
+
+Quando usar Next.js?
+Quando você quer sites rápidos, responsivos, bem indexados pelo Google
+E-commerces, blogs, landing pages, dashboards, plataformas de SaaS, portfólios
+Quando precisa tanto de frontend quanto de pequenas APIs juntos
+Exemplo Simples de Uso
+Criando um arquivo pages/about.js:
+
+js
+Copy
+
+export default function About() {
+  return <h1>Sobre Nós</h1>
+}
+Ao rodar o projeto, acessar /about já mostra essa página.
